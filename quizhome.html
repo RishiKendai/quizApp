@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz-home</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="quizhome1.css">
+
+  </head>
+
+  <body>
+    <!-- QUIZ SCREEN -->
+    <div class="container-quiz">
+      <div class="headertab">
+        <div class="timer">
+          <p>Time Left :</p><span class="times"></span>
+        </div>
+        <!-- <div class="quiz-tab">
+          <div class="outbar">
+            <div class="inBar"></div>
+          </div> -->
+        <div class="bardiv">
+          <div id="myBar">
+            <p>Score:</p>
+            <span class="score">0</span>
+          </div>
+        </div>
+      </div>
+      <!-- DISPLAY QUESTION-TAB -->
+      <div class="quiz-tab">
+        <div class="outbar">
+          <div class="inBar"></div>
+        </div>
+
+        <div class="question"></div>
+        <div class="answer"></div>
+        <span class="alignbtn">
+          <button class="nxt hide">Next</button>
+          <button class="finished hide">Finish</button>
+        </span>
+      </div>
+      <!-- SCORE SCREEN -->
+      <div class="showscore">
+        <div class="innerscore">
+          <input type="text" class="name" placeholder="Enter Your Name" required maxlength="20">
+          <span>
+            <label class="score-lbl">Your Score:<span class="display-score"></span></label>
+            <label class="total-lbl">Total Question:<span class="display-total"></span></label>
+            <label class="Answered-lbl">Correct:<span class="display-crct"></span></label>
+            <label class="Answered-lbl">Wrong:<span class="display-wrng"></span></label>
+          </span>
+          <div class="buttons">
+            <button class="save">Save</button>
+            <button class="cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quizhome.js"></script>
+  </body>
+
+</html>
